@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.powerpuff-girls {
+  background: #af4051;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 400px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.girl-head {
+  z-index: 10;
+  width: 150px;
+  height: 122px;
+  border: 5px solid black;
+  border-radius: 50%;
+  background-color: #f7e0d0;
+  position: absolute;
+  top: 120px;
+  overflow: hidden;
+  z-index: 5;
+}
+.girl-nose {
+  width: 16px;
+  height: 16px;
+  border-radius: 0% 0% 50% 50%;
+  border: 3px solid;
+  border-color: transparent black black black;
+  position: absolute;
+  top: 80px;
+  left: 63px;
+}
+.girl-left-eye {
+  position: absolute;
+  width: 67px;
+  height: 75px;
+  top: 14px;
+  left: -5px;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 50%;
+  transform: rotate(10deg);
+  background-image: radial-gradient(
+    60px 70px at 40px 40px,
+    #d7a5b6 0%,
+    #d7a5b6 50%,
+    transparent 50%,
+    transparent 100%
+  );
+}
+.girl-left-eye::before {
+  content: '';
+  position: absolute;
+  width: 22px;
+  height: 27px;
+  border-top: 11px solid black;
+  border-right: 10px solid black;
+  border-bottom: 11px solid black;
+  border-left: 10px solid black;
+  border-radius: 50%;
+  top: 15px;
+  right: 0px;
+  background-color: white;
+  transform: rotate(15deg);
+}
+.girl-right-eye {
+  position: absolute;
+  width: 67px;
+  height: 75px;
+  top: 14px;
+  right: -5px;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 50%;
+  transform: rotate(0deg);
+  background-image: radial-gradient(
+    60px 70px at 22px 40px,
+    #d7a5b6 0%,
+    #d7a5b6 50%,
+    transparent 50%,
+    transparent 100%
+  );
+}
+.girl-right-eye::before {
+  content: '';
+  position: absolute;
+  width: 22px;
+  height: 27px;
+  border-top: 11px solid black;
+  border-right: 10px solid black;
+  border-bottom: 11px solid black;
+  border-left: 10px solid black;
+  border-radius: 50%;
+  top: 17px;
+  left: -1px;
+  background-color: white;
+  transform: rotate(-15deg);
+}
+.girl-hair {
+  position: relative;
+}
+.girl-hair1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #e79939;
+  z-index: 3;
+}
+.girl-hair2 {
+  position: absolute;
+  background-color: #e79939;
+  top: 6px;
+  left: 6px;
+  width: 37px;
+  height: 20px;
+  transform: skew(-50deg);
+  border: 5px solid black;
+  border-color: transparent black black transparent;
+  z-index: 1;
+}
+.girl-hair3 {
+  position: absolute;
+  background-color: #e79939;
+  top: 5px;
+  left: 44px;
+  width: 29px;
+  height: 21px;
+  border: 5px solid black;
+  transform: skew(-42deg);
+  border-color: transparent black black black;
+  z-index: 1;
+}
+.girl-hair4 {
+  position: absolute;
+  background-color: #e79939;
+  width: 25px;
+  height: 23px;
+  top: 3px;
+  right: 41px;
+  border: 5px solid black;
+  transform: skew(33deg);
+  border-color: transparent black black black;
+  z-index: 1;
+}
+.girl-hair5 {
+  position: absolute;
+  background-color: #e79939;
+  top: 1px;
+  right: -2px;
+  width: 45px;
+  height: 26px;
+  transform: skew(50deg);
+  border: 5px solid black;
+  border-color: transparent transparent black black;
+  z-index: 1;
+}
+.girl-bow {
+  position: relative;
+}
+.girl-bow1 {
+  position: absolute;
+  background-color: #c50001;
+  top: -149px;
+  left: -16px;
+  width: 40px;
+  height: 50px;
+  border-radius: 40%;
+  border: 5px solid black;
+  z-index: 2;
+}
+.girl-bow2 {
+  position: absolute;
+  top: -199px;
+  left: -48px;
+  background-color: #c50001;
+  width: 36px;
+  height: 120px;
+  border: 5px solid;
+  border-radius: 50% 50% 50% 50%;
+  transform: rotate(-10deg);
+  z-index: 2;
+}
+.girl-bow3 {
+  position: absolute;
+  top: -186px;
+  right: -51px;
+  background-color: #c50001;
+  border: 5px solid black;
+  width: 34px;
+  height: 120px;
+  border-radius: 50% 50% 50% 50%;
+  transform: rotate(20deg);
+  z-index: 2;
+}
+.girl-arm {
+  position: relative;
+}
+.girl-left-arm {
+  position: absolute;
+  left: -95px;
+  top: -39px;
+  background-color: #f7e0ce;
+  border: 5px solid black;
+  width: 53px;
+  height: 36px;
+  border-radius: 100% 50% 0 50%;
+  transform: rotate(-35deg);
+}
+.girl-right-arm {
+  position: absolute;
+  height: 110px;
+  width: 33px;
+  top: -158px;
+  right: -98px;
+  border: 5px solid black;
+  background-color: #f7e0ce;
+  border-radius: 50% 50% 50% 50%/40% 40% 50% 50%;
+  transform: rotate(15deg);
+}
+.girl-body {
+  position: absolute;
+  top: 235px;
+  left: 176px;
+  height: 55px;
+  width: 51px;
+  border: 5px solid black;
+  background-color: #d7a5b6;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 30%,
+    black 30%,
+    black 65%,
+    transparent 65%,
+    transparent 100%
+  );
+  transform: skew(2deg);
+  z-index: 2;
+}
+.girl-left-leg {
+  position: absolute;
+  bottom: 193px;
+  left: 164px;
+  width: 32px;
+  height: 50px;
+  border: 5px solid black;
+  background-color: white;
+  border-radius: 50% 50% 50% 50%/60% 60% 40% 40%;
+  background-image: radial-gradient(
+    40px 60px at 50% 0px,
+    transparent 0%,
+    transparent 50%,
+    black 50%,
+    black 100%
+  );
+  z-index: 2;
+}
+.girl-left-leg::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: -5px;
+  width: 26px;
+  height: 27px;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+.girl-right-leg {
+  position: absolute;
+  width: 31px;
+  height: 60px;
+  bottom: 156px;
+  right: 173px;
+  border: 5px solid black;
+  border-radius: 0 0 50% 40%;
+  background-image: radial-gradient(
+    50px 50px at 17px 7px,
+    white 0%,
+    white 50%,
+    black 50%,
+    black 100%
+  );
+  z-index: 1;
+}
+.girl-right-leg::after {
+  content: '';
+  position: absolute;
+  right: 0px;
+  bottom: 3px;
+  width: 22px;
+  height: 12px;
+  background-color: white;
+  transform: rotate(5deg);
+  border-radius: 50% 0 50% 0;
+  background-image: radial-gradient(
+    25px 30px at 100% 0,
+    white 0,
+    white 50%,
+    black 50%,
+    black 100%
+  );
+  z-index: 1;
+}
